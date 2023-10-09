@@ -1,0 +1,54 @@
+.header{
+    &__title{
+        color: #22202E;
+        font-family: Clash Display;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin: 20px 0 20px 0;
+    }
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__serch{
+        margin-left: 28px;
+        color: #2A254B;
+    }
+
+    &__apps{
+        display: flex;
+        gap: 16px;
+        align-items:center;
+        margin-right: 28px;
+    }
+
+    &__line{
+        background: rgba(0, 0, 0, 0.10);
+        margin: 0 26px 0 26px;
+    }
+
+    &__item{
+        color: #726E8D;
+        font-family: Satoshi;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    &__list{
+        display: flex;
+        gap: 44px;
+        margin: 20px 0 20px 0;
+
+    }
+    &__nav{
+        display: flex;
+        margin: 0 auto;
+    }
+}
+
+

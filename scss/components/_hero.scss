@@ -1,0 +1,45 @@
+.hero{
+    &__block{
+        background: var(--Dark-Primary, #2A254B);
+
+        display: flex;
+        flex-direction: column;
+        gap: 41px;
+    }
+
+    &__title{
+        color: var(--White, #FFF);
+        font-family: Clash Display;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+    }
+    &__btn{
+        padding: 0;
+        color: var(--White, #FFF);
+        font-family: Satoshi;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        padding: 16px 32px;
+        background: rgba(249, 249, 249, 0.15);
+        border: none;
+    }
+
+    &__img{
+        width: 520px;
+        height: 584px;
+    }
+    &__desk{
+        color: var(--White, #FFF);
+
+
+        font-family: Satoshi;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 27px */
+    }
+}
