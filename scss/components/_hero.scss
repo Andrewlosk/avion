@@ -1,10 +1,14 @@
 .hero{
+
     &__block{
         background: var(--Dark-Primary, #2A254B);
 
         display: flex;
         flex-direction: column;
         gap: 41px;
+        padding: 60px;
+        margin: 60px 0 60px 0;
+        position: relative;
     }
 
     &__title{
@@ -26,11 +30,15 @@
         padding: 16px 32px;
         background: rgba(249, 249, 249, 0.15);
         border: none;
+        width: 170px;
     }
 
     &__img{
         width: 520px;
         height: 584px;
+        position: absolute;
+        top: 0;
+        right: 0;
     }
     &__desk{
         color: var(--White, #FFF);
@@ -42,4 +50,16 @@
         font-weight: 400;
         line-height: 150%; /* 27px */
     }
+    &__group{
+        display: flex;
+        flex-direction: column;
+        gap: 41px;
+
+    }
+    &__pack{
+        display: flex;
+        flex-direction: column;
+        gap: 196px;
+    }
+
 }
