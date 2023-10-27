@@ -12,6 +12,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+
     }
     &__serch{
         margin-left: 28px;
@@ -23,11 +24,27 @@
         gap: 16px;
         align-items:center;
         margin-right: 28px;
+        @media (min-width:320px) {
+            display: none;
+        }
     }
 
     &__line{
         background: rgba(0, 0, 0, 0.10);
         margin: 0 26px 0 26px;
+        @media (min-width:320px) {
+            display: none;
+            
+        }
+    }
+
+    &__search{
+        @media(min-width:320px){
+            display: none;
+        }
+        @media(min-width:1280px){
+            display: block;
+        }
     }
 
     &__item{
@@ -48,7 +65,32 @@
     &__nav{
         display: flex;
         margin: 0 auto;
+        @media (min-width:320px) {
+            display: none;
+        }
     }
+
+    &__hamburger {
+        @media (min-width:320px){
+          display: flex;
+          flex-direction: column;
+          gap: 4px;
+          span{
+            width: 24px;
+            display: block;
+            border: 1px solid #212121;
+          }
+        }
+        // @media(min-width:480px){
+    
+    
+        // }
+    
+        @media (min-width:768px){
+          display: none;
+    
+        }
+      }
 }
 
 

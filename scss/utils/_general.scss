@@ -12,8 +12,24 @@ hr{
 }
 
 .container{
-    width: 1244px;
+    // width: 1244px;
     margin: 0 auto;
+
+    @media(min-width:320px){
+        padding: 0 20px;
+
+    }
+    @media(min-width:390px){
+        padding: 0 24px;
+    }
+    @media(min-width:768px){
+        max-width: 738px;
+        padding: 0;
+    }
+    @media(min-width:1280px){
+        max-width: 1244px;
+    }
+
 }
 
 @font-face {

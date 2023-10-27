@@ -1,0 +1,50 @@
+.feasibility{
+    padding: 60px 0 86px 0;
+    &__title{
+        color: var(--Dark-Primary, #2A254B);
+        font-family: Clash Display;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        text-align: center;
+        margin: 0;
+        margin-bottom: 51px;
+    }
+    &__img{
+        width: 24px;
+        height: 24px;
+    }
+    &__subtittles{
+        color: var(--Dark-Primary, #2A254B);
+        font-family: Clash Display;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        margin: 0;
+        margin-top: 16px;
+    }
+    &__desk{
+        margin: 0;
+        color: var(--Dark-Primary, #2A254B);
+        font-family: Satoshi;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        margin-top: 8px;
+    }
+    &__item{
+        display: flex;
+        flex-direction: column;
+        width: 266px;
+
+    }
+    &__list{
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+        gap: 59px;
+    }
+}
