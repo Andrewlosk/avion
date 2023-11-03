@@ -1,4 +1,4 @@
-.ceramic{
+.popluar{
     
     @media (min-width:320px) {
         padding: 48px 0 38px 0;
@@ -110,5 +110,16 @@
             flex-wrap: nowrap;
             justify-content: left;
         }
+    }
+    &__vases{
+        display: none;
+    }
+    &__lamp{
+        display: none;
+    }
+
+    &__sofaimg{
+        width: 630px;
+        margin-bottom: 24px;
     }
 }
