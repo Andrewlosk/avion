@@ -1,18 +1,26 @@
 .singup{
     
-    .container{
-        @media(min-width:320px){
-            padding: 0;
-        }
-    }
+    // .container{
+    //     @media(min-width:320px){
+    //         padding: 0;
+    //     }
+    // }
     @media (min-width:320px){
         padding: 0;
+        // margin: 0 24px 0 24px;
     }
     @media (min-width:768px){
         padding: 52px 0 65px 0; 
+        margin: 0;
     }
     
-    background: #F9F9F9;
+    
+    @media(min-width:320px){
+        background:#FFF
+    }
+    @media(min-width:768px){
+        background: #F9F9F9;
+    }
     &__block{
        background:#FFF;
        padding: 68px 0 54px 0;
@@ -47,12 +55,14 @@
         font-style: normal;
         font-weight: 400;
         line-height: 150%;
-        margin-bottom: 72px;
+        
         @media (min-width:320px) {
             font-size: 14px;
+            margin-bottom: 64px;
         }
         @media (min-width:768px){
             font-size: 16px;
+            margin-bottom: 72px;
 
         } 
     }
@@ -66,7 +76,13 @@
         font-weight: 400;
         line-height: normal;
         padding: 17px 0 17px 32px;
-        width: 354px;
+
+        @media (min-width:320px){
+            width: 180px;
+        }
+        @media(min-width:768px){
+            width: 354px; 
+        }
     }
     &__btn{
         border: none;
@@ -77,11 +93,16 @@
         font-weight: 400;
         line-height: 150%;
         padding: 15.5px 32px;
-        background: #2A254B; 
+        background: #2A254B;
+        @media(min-width:320px){
+            padding: 16px 32px;
+
+        } 
     }
     &__form{
         display: flex;
         justify-content: center;
         margin: 0 auto;
+        // margin: 0 24px 0 24px;
     }
 }
