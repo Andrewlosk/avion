@@ -1,6 +1,20 @@
 .footer{
-    padding-top: 58px;
+    
     background: #2A254B;
+    
+    @media (min-width:320px){
+        padding-top: 40px;
+        padding-bottom: 20px;
+
+    }
+    @media(min-width:768px){
+        padding-top: 50px;
+        padding-bottom: 22px;
+        
+    }
+    @media(min-width:1280px){
+        padding-top: 58px;
+    }
     &__title{
         color: var(--White, #FFF);
         font-family: Clash Display;
@@ -21,10 +35,35 @@
         display: flex;
         flex-direction: column;
         gap: 12px;
+        @media(min-width:320px){
+            &:nth-child(1){
+                order: 1;
+            }
+            &:nth-child(2){
+                order: 0;
+            }
+            &:nth-child(3){
+                order: 3;
+            }
+            &:nth-child(4){
+                order: 4;
+            }
+        }
     }
     &__listblock{
         display: flex;
-        gap: 120px;
+        
+        margin-bottom: 48px;
+        @media(min-width:320px){
+            flex-wrap: wrap;
+            row-gap: 40px;
+            column-gap: 96px;
+
+            // gap: 40px;
+        }
+        @media(min-width:768px){
+            gap: 120px;
+        }
 
     }
     &__input{
@@ -38,8 +77,24 @@
         font-weight: 400;
         line-height: normal;
         background: rgba(255, 255, 255, 0.15);
-        padding: 17px 0 17px 32px;
-        width: 439px;
+        
+        
+        @media(min-width:320px){
+            width: 140px;
+            padding: 17px 0 17px 25px;
+
+        }
+        @media(min-width:390px){
+            width: 224px;
+            padding: 17px 0 17px 32px;
+        }
+        @media(min-width:768px){
+            width: 330px;
+
+        }
+        @media(min-width:1280px){
+            width: 439px;
+        }
     }
     &__btn{
         border: none;
@@ -60,5 +115,36 @@
         display:flex;
         flex-direction: row;
     }
-
+    &__date{
+        color: var(--White, #FFF);
+        font-family: Satoshi;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    &__contactlist{
+        
+        
+        @media(min-width:320px){
+            display:none;
+        }
+        @media(min-width:768px){
+            display: flex;
+            gap: 24px;
+        }
+    }
+    &__block{
+        display: flex;
+        align-items: center;
+        
+        margin-top: 22px;
+        @media(min-width:320px){
+            // text-align: center;
+            justify-content: center;
+        }
+        @media(min-width: 768px){
+            justify-content: space-between;
+        }
+    }
 }
